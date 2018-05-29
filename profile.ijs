@@ -51,3 +51,90 @@ md temp
 
 NB. boot up J and load startup.ijs if it exists
 0!:0 <jpathsep (4!:55 (;:'systype fhs isroot userx ids md'), ids)]system,'/util/boot.ijs'
+
+load 'strings'
+plus   =: +
+sum    =: +/
+double =: +:
+
+minus =: -
+diff  =: -/
+halve =: -:
+
+times  =: *
+prod   =: /*
+square =: *:
+
+divideBy =: %
+sqrt     =: %:
+mod      =: |~
+
+toThePower =: ^
+log        =: ^.
+floor      =: <.
+ceil       =: >.
+where      =: #~
+
+unique  	   =: ~.
+uniqueLocations =: ~:
+without 	   =: -.
+
+or  =: +.
+and =: *.
+
+perms     =: [:>[:,[:{[#[:<]
+take      =: {.
+first     =: {.
+pop_front =: {:
+last      =: {:
+pop       =: }:
+stitch    =: ,.
+enlist    =: ,
+reverse   =: |.
+rotate    =: |.
+transpose =: |:
+reshape   =: $
+countOf   =: #
+
+indexOf     =: i.
+indexOfLast =: i:
+
+min =: <./
+max =: >./
+
+sort =: /:~
+sortDesc =: \:~
+
+cols =: {"1
+
+exists =: e.
+
+toInt  =: ".
+toStr  =: ":
+
+
+NB. join boxed list y with x; see strsplit
+join=: #@[ }. <@[ ;@,. ]
+NB. strsplit y by substring x; see join
+split=: #@[ }.each [ (E. <;.1 ]) ,
+
+words =: ;:
+trim  =: dltbs
+replace =: rplc
+removeDoubleSpace =: deb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
